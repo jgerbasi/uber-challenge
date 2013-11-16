@@ -71,10 +71,10 @@ $(document).ready(function() {
     })
   });
 
-  $("#searchText").keyup(function(event){
-
+  // Trigger search when user hits 'enter' key
+  $("#title-search").keyup(function(event){
     if (event.which === 13) {
-      $("#searchButton").trigger("click");
+      $("#btn-search").trigger("click");
      }  
   });
 })
