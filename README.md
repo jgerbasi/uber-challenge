@@ -41,3 +41,16 @@ Libraries
 ---
 * Twitter Bootstrap typeahead.js
   * Dual purpose of autocomplete + typeahead in search box
+
+Notes
+---
+* No explicit data entry validation
+  * No user data is stored so XSS is unlikely for this application
+  * ActiveRecord ORM query parameterization automatically escapes SQL Injection
+* Data-set was not geocoded perfectly
+  * If had time, would have developed better geocoding algorithm/filtered out bad data
+
+* Front-end design is my weak point
+
+* Database is not in 3NF due to additional complexity/scope
+  * Ideally would have tables for movies, production companies, distributors, directors, writers and actors to reduce data redundancy
