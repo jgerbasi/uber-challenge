@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20131116032301) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "locations", force: true do |t|
     t.string   "title"
     t.string   "release_year"
