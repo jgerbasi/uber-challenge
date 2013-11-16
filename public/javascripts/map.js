@@ -4,6 +4,7 @@ function initialize() {
     // Default center to SF
     center: new google.maps.LatLng(37.7749295, -122.4194155),
     zoom: 8,
+    scrollwheel: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 

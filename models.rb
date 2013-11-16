@@ -1,6 +1,7 @@
 set :database, "sqlite3:///movies.db"
  
 class Location < ActiveRecord::Base
+
   def self.getTitles
     self.all.map {|l| l.title}
   end

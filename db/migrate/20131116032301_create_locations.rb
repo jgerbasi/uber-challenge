@@ -12,6 +12,8 @@ class CreateLocations < ActiveRecord::Migration
       t.string :actor_1
       t.string :actor_2
       t.string :actor_3
+      t.float :latitude
+      t.float :longitude
       t.timestamps
     end
   end

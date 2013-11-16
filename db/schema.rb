@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20131116032301) do
     t.string   "actor_1"
     t.string   "actor_2"
     t.string   "actor_3"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

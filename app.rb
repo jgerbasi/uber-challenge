@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require File.dirname(__FILE__) + '/models.rb'
 require 'json'
+require 'geocoder'
 
 before do
   content_type 'application/json'
