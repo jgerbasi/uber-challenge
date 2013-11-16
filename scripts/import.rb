@@ -1,3 +1,6 @@
+# Imports location data from .csv file
+# Source: https://data.sfgov.org/Arts-Culture-and-Recreation-/Film-Locations-in-San-Francisco/yitu-d5am
+
 require "csv"
 require "./app"   
 

@@ -1,3 +1,5 @@
+# This uses the geocoder gem/google geocoding API to obtain coordinates for location data
+
 require "./app"
 
 Location.all.each do |l|
