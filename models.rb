@@ -1,3 +1,4 @@
+# Configure DB Connection for Heroku & localhost
 configure :production, :development do
     db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/movies')
 

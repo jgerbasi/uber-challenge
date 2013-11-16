@@ -69,5 +69,12 @@ $(document).ready(function() {
     $.getJSON('/markers', function(results) {
       drawMarkers(results);
     })
-  })
+  });
+
+  $("#searchText").keyup(function(event){
+
+    if (event.which === 13) {
+      $("#searchButton").trigger("click");
+     }  
+  });
 })

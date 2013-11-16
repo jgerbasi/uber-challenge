@@ -40,7 +40,7 @@ get "/autocomplete" do
   Location.autocomplete(params[:term]).to_json
 end
 
-# Catch-all for bad routes
+# 404 Catch-all for bad routes
 get "/*" do
   status 404
   body '404 Error - This Page Does Not Exist'
