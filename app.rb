@@ -18,6 +18,6 @@ get "/locations" do
 end
 
 get "/autocomplete" do
-  @names = Location.getTitles
-  @names.to_json
+  @term = request.env['rack.request.query_hash']['term']
+  Location.autocomplete(@term).to_json
 end

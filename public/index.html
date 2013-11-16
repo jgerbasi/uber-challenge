@@ -2,18 +2,27 @@
 <html>
   <head>
     <title>Movie Locations in San Fransisco</title>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="javascripts/jquery-1.9.1.js"></script>
+    <script src="javascripts/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="javascripts/autocomplete.js"></script>
+    <script src="javascripts/typeahead.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ5OGK62Xl2rkItVlJ_SWBpv2em2CeSqE&sensor=false">
+    </script>
+    <script src="javascripts/map.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/typeahead.js-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/layout.css">
   </head>
 
   <body>
     <div id="content">
-      <h1>Movie Locations in San Fransisco</title>
+      <h1>Movie Locations in San Fransisco</h1>
 
       <div id="search">
-        <input type="text" id="title-search">
-        <button type="button">Search</button> 
+        <input type="text" id="title-search" class="typeahead" placeholder="Search by name ..."> 
+        <button type="button" class="btn-search">SEARCH</button> 
       </div>
+      <div id="map-canvas"></div>
     </div>
   </body>
 </html>
