@@ -71,8 +71,14 @@ $(document).ready(function() {
     })
   });
 
-  // Trigger search when user hits 'enter' key
   $("#title-search").keyup(function(event){
+
+    // Triggers reset when search field is empty
+    if ($('#title-search').val() === '') {
+      $('#btn-reset').trigger("click");
+    }
+
+    // Trigger search when user hits 'enter' key
     if (event.which === 13) {
       $("#btn-search").trigger("click");
      }  
