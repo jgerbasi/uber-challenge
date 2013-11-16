@@ -11,18 +11,34 @@
     <script src="javascripts/map.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui-1.10.3.custom.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/typeahead.js-bootstrap.css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="stylesheets/layout.css">
   </head>
 
-  <body>
-    <div id="content">
-      <h1>Movie Locations in San Fransisco</h1>
+  <body background='http://d1vmp8zzttzftq.cloudfront.net/wp-content/uploads/2012/10/the-golden-gate-bridge-in-san-francisco-with-beautiful-blue-ocean-in-background-1600x1066.jpg'>
 
+    <!-- MAIN CONTENT -->
+    <div id="content">
+      <h1>Movie Filming Locations: San Fransisco</h1>
+
+      <!-- MAP -->
       <div id="map-canvas"></div>
+      <!-- -->
+
+      <!-- SEARCH/FILTERING -->
       <div id="search">
-        <input type="text" id="title-search" class="typeahead" placeholder="Search by name ..."> 
-        <button type="button" class="btn-search">SEARCH</button> 
+        <input type="text" id="title-search" class="typeahead" placeholder="Filter by movie title ..."> 
+        <button type="button" id="btn-search">Filter</button>
+        <button type="button" id="btn-reset">Reset</button> 
       </div>
+      <!-- -->
+
+      <!-- MESSAGES -->
+      <div id="messages">
+        <p>Showing film locations for: <span id="movie-title">All Films</span></p>
+      </div>
+      <!-- -->
+      
     </div>
   </body>
 </html>

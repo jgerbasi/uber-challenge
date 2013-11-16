@@ -4,19 +4,51 @@ body {
   font-weight: 300;
 }
 
+h1 {
+  font-family: Lobster;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
 #content {
-  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 #search {
-  width: 550px;
+  width: 650px;
+  float: right;
 }
 
-.btn-search {
-  height: 50px;
+#btn-reset {
+  position: relative;
+  top: 30px;
+  left: -50px;
 }
+
 
 #map-canvas {
-  width: 700px;
+  float: left;
+  width: 500px;
   height: 500px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+#messages {
+  clear: both;
+  background: white;
+  height: 20px;
+  text-align: center;
+}
+
+#movie-title {
+  color: green;
+}
+
+p {
+  font-size: 16px;
 }

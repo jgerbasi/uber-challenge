@@ -1,7 +1,7 @@
 require 'csv'
 require "./app"   
 
-csv_text = File.read('./Film_Locations_in_San_Francisco.csv')
+csv_text = File.read('./data/Film_Locations_in_San_Francisco.csv')
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
   l = Location.new
