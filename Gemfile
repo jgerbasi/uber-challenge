@@ -7,6 +7,7 @@ gem 'rake', '~> 10.1.0'
 gem 'sqlite3', '~> 1.3.8'
 gem 'activerecord', '~> 4.0.1'
 gem 'sinatra-activerecord', '~> 1.2.3'
+gem 'geocoder'
 
 group :development do
   gem 'shotgun', '~> 0.9'
